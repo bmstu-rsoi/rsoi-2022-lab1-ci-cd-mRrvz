@@ -71,7 +71,6 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
@@ -517,6 +516,7 @@ _deps
 ### Go template
 # Binaries for programs and plugins
 *.exe~
+!*go.mod
 
 # Test binary, built with `go test -c`
 *.test
@@ -622,10 +622,6 @@ config/master.key
 
 # Only include if you have production secrets in this file, which is no longer a Rails default
 # config/secrets.yml
-
-# dotenv, dotenv-rails
-# TODO Comment out these rules if environment variables can be committed
-.env.*
 
 ## Environment normalization:
 /.bundle
@@ -1234,3 +1230,6 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+
+*/rsoi-lab01
+rsoi-lab01
