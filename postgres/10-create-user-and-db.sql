@@ -18,4 +18,4 @@ INSERT INTO persons(name, age, address, work) VALUES
     ('Dmitry Yakuba', 22, 'Yasenevo', 'IVI'),
     ('Pavel Perestoronin', 22, 'Yasenevo', 'Yandex'),
     ('Mikhail Nitenko', 22, 'Mauritius', 'Parallels'),
-    ('Sergey Kononenko', 22, 'Astana', 'SberMegaMarket');
+    ('Sergey Kononenko', 22, 'Astana', 'SberMarket');
