@@ -3,7 +3,6 @@ package server
 import (
 	"context"
 	"log"
-	"os"
 
 	"github.com/bmstu-rsoi/rsoi-2022-lab1-ci-cd-mRrvz/src/db"
 	"github.com/bmstu-rsoi/rsoi-2022-lab1-ci-cd-mRrvz/src/repo"
@@ -20,11 +19,11 @@ func init() {
 	ctx := context.Background()
 
 	postgresClient, err := db.NewPostgresClient(ctx, &db.Options{
-		Host:     os.Getenv("POSTGRES_HOST"),
-		Port:     os.Getenv("POSTGRES_PORT"),
-		User:     os.Getenv("POSTGRES_USER"),
-		Password: os.Getenv("POSTGRES_PASS"),
-		DB:       os.Getenv("POSTGRES_DB"),
+		Host:     "ec2-18-214-35-70.compute-1.amazonaws.com",                         /* os.Getenv("POSTGRES_HOST"), */
+		Port:     "5432",                                                             /* os.Getenv("POSTGRES_PORT"), */
+		User:     "kygszpllzydzcl",                                                   /* os.Getenv("POSTGRES_USER"), */
+		Password: "e2fae91b45875b8e34b2fb98abffa2d7a8fe5f8e283fd7d7a2ce3975ec3a48a3", /* os.Getenv("POSTGRES_PASS"), */
+		DB:       "d2vcb8m0neje4o",                                                   /* os.Getenv("POSTGRES_DB"), */
 	})
 
 	if err != nil {
